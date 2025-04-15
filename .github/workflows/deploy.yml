@@ -49,4 +49,4 @@ jobs:
         az containerapp update \
           --name ${{ secrets.CONTAINER_APP_NAME }} \
           --resource-group ${{ secrets.RESOURCE_GROUP }} \
-          --image ${{ secrets.ACR_NAME }}.azurecr.io/frontend:latest
+          --image ${{ secrets.ACR_NAME }}.azurecr.io/users-api:latest
