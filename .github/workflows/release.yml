@@ -10,17 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # importante para semantic-release
-          ref: develop     # especifica la rama si es necesaria
-
-              
+      - name: Checkout
+        uses: actions/checkout@v4    
 
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 21
 
       - name: Install dependencies
         run: npm ci
