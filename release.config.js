@@ -1,5 +1,5 @@
 module.exports = {
-    branches: ['develop'], // o ['main', 'next'] si manejas ramas múltiples
+    branches: ['master'], // o ['main', 'next'] si manejas ramas múltiples
     tagFormat: 'v${version}',
   
     plugins: [
